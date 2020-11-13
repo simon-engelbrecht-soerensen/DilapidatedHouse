@@ -197,6 +197,9 @@
         },
         {
             "m_Id": "09421d542d704cf6807e876033ad4bb0"
+        },
+        {
+            "m_Id": "1f1359af91a74abfa0a357a50dce4186"
         }
     ],
     "m_GroupDatas": [],
@@ -940,6 +943,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "09421d542d704cf6807e876033ad4bb0"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "f272ed01fb3f4a2f9b63b674defe6f9c"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "1f1359af91a74abfa0a357a50dce4186"
                 },
                 "m_SlotId": 0
             }
@@ -1995,6 +2012,65 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "1d16170f375d4af49414a4299f8d5823",
+    "m_Id": 0,
+    "m_DisplayName": "In",
+    "m_SlotType": 0,
+    "m_Priority": 2147483647,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "In",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CosineNode",
+    "m_ObjectId": "1f1359af91a74abfa0a357a50dce4186",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Cosine",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -56.00007247924805,
+            "y": -2386.0,
+            "width": 208.0,
+            "height": 278.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "1d16170f375d4af49414a4299f8d5823"
+        },
+        {
+            "m_Id": "bc335717a5bb48d9833208005a4b7250"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
 }
 
 {
@@ -4524,27 +4600,27 @@
     "m_Value": {
         "serializedVersion": "2",
         "key0": {
-            "r": 0.7264150977134705,
+            "r": 0.5471698045730591,
             "g": 0.0,
             "b": 0.0,
             "a": 1.0
         },
         "key1": {
-            "r": 4.450643539428711,
-            "g": 0.43245118856430056,
-            "b": 0.018018800765275956,
+            "r": 5.699465274810791,
+            "g": 0.539949357509613,
+            "b": 0.0,
             "a": 1.0
         },
         "key2": {
-            "r": 0.9705120325088501,
-            "g": 0.093098945915699,
-            "b": 0.002014866564422846,
+            "r": 4.450643539428711,
+            "g": 0.43245118856430056,
+            "b": 0.018018800765275956,
             "a": 0.0
         },
         "key3": {
-            "r": 0.9705120325088501,
-            "g": 0.093098945915699,
-            "b": 0.002014866564422846,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
             "a": 0.0
         },
         "key4": {
@@ -4572,9 +4648,9 @@
             "a": 0.0
         },
         "ctime0": 0,
-        "ctime1": 23708,
-        "ctime2": 58018,
-        "ctime3": 58018,
+        "ctime1": 47417,
+        "ctime2": 23708,
+        "ctime3": 0,
         "ctime4": 0,
         "ctime5": 0,
         "ctime6": 0,
@@ -6571,6 +6647,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "bc335717a5bb48d9833208005a4b7250",
+    "m_Id": 1,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Priority": 2147483647,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "be0cfa96d3644237befc228d8d9a2e0e",
     "m_Group": {
@@ -8028,8 +8129,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -591.0000610351563,
-            "y": -2269.0,
+            "x": -688.0,
+            "y": -2347.999755859375,
             "width": 208.0,
             "height": 278.0
         }
