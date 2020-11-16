@@ -13,16 +13,17 @@ public class TriggerEvent : MonoBehaviour
     public bool triggered = false;
 
     public Animator animator;
+    private static readonly int Play = Animator.StringToHash("Play");
+
     private void Update()
     {
         var distanceToTorch = Vector3.Distance(torch.transform.position, this.transform.position);
         
-        Debug.Log(distanceToTorch);
         if (distanceToTorch < distance && triggered == false)
         {
             triggered = true;
             //play anim
-            animator.SetTrigger("Play");
+            animator.SetTrigger(Play);
         }
 
         if (distanceToTorch > distance && triggered)
