@@ -9347,7 +9347,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3679606384067732864, guid: 5fdd0b0902bf1fa46a5d32caa7daca52, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5fdd0b0902bf1fa46a5d32caa7daca52, type: 3}
 --- !u!1 &684343007 stripped
 GameObject:
@@ -9478,7 +9479,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3679606384067732864, guid: 5fdd0b0902bf1fa46a5d32caa7daca52, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5fdd0b0902bf1fa46a5d32caa7daca52, type: 3}
 --- !u!1001 &785071004
 PrefabInstance:
